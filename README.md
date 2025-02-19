@@ -1,6 +1,6 @@
-# 📚 Multi-Level Referral and Earning System Documentation
+#  Multi-Level Referral and Earning System Documentation
 
-## 🏆 **Project Overview**
+##  **Project Overview**
 
 This project is a **Multi-Level Referral and Earning System** built with:
 
@@ -18,7 +18,7 @@ Users can:
 
 ---
 
-## 🗂️ **Project Structure**
+##  **Project Structure**
 
 ```
 multi-level-referral/          # Next.js App (Frontend + API)
@@ -57,16 +57,16 @@ ws-server/                      # WebSocket Server (Real-Time)
 
 ---
 
-## ⚙️ **Setup Instructions**
+##  **Setup Instructions**
 
-### ✅ **1. Clone the Repository:**
+###  **1. Clone the Repository:**
 
 ```bash
 git clone <repository_url>
 cd multi-level-referral
 ```
 
-### ✅ **2. Install Dependencies:**
+###  **2. Install Dependencies:**
 
 ```bash
 # For Next.js App
@@ -77,7 +77,7 @@ cd ../ws-server
 npm install
 ```
 
-### ✅ **3. Setup PostgreSQL Database:**
+###  **3. Setup PostgreSQL Database:**
 
 **Using Docker:**
 
@@ -96,14 +96,14 @@ Update `.env` in both **Next.js** and **WebSocket** projects:
 DATABASE_URL="postgresql://username:password@localhost:5432/multi_level_referral"
 ```
 
-### ✅ **4. Run Prisma Migrations:**
+###  **4. Run Prisma Migrations:**
 
 ```bash
 cd multi-level-referral
 npx prisma migrate dev --name init
 ```
 
-### ✅ **5. Start Services:**
+###  **5. Start Services:**
 
 ```bash
 # Start WebSocket Server
@@ -118,9 +118,9 @@ npm run dev
 
 ---
 
-## 🔌 **API Endpoints**
+##  **API Endpoints**
 
-### 📤 **User API:** `/api/users`
+###  **User API:** `/api/users`
 
 - **POST:** Create a new user.
 
@@ -133,7 +133,7 @@ npm run dev
 }
 ```
 
-### 📤 **Referrals API:** `/api/referrals`
+###  **Referrals API:** `/api/referrals`
 
 - **POST:** Create a referral link.
 
@@ -146,7 +146,7 @@ npm run dev
 }
 ```
 
-### 📤 **Purchases API:** `/api/purchases`
+###  **Purchases API:** `/api/purchases`
 
 - **POST:** Create a purchase and distribute earnings.
 
@@ -161,7 +161,7 @@ npm run dev
 
 ---
 
-## 📡 **WebSocket Server**
+##  **WebSocket Server**
 
 - **URL:** `ws://localhost:4000`
 - Listens for **new purchases** and broadcasts real-time earnings updates.
@@ -189,7 +189,7 @@ ws.onmessage = (event) => {
 
 ---
 
-## 🧪 **Testing the System**
+##  **Testing the System**
 
 1. **Create Users** (via API or Prisma Studio).
 2. **Establish Referrals** between users.
@@ -215,9 +215,9 @@ npx prisma studio
 
 ---
 
-## 🎉 **Done!**
+##  **Done!**
 
 The **Multi-Level Referral and Earning System** is now fully functional. Users can create referrals, make purchases, and see real-time earnings updates through the WebSocket integration.
 
-Happy coding! 🚀
+Happy coding! 
 
